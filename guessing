@@ -1,9 +1,10 @@
 ```mermaid
 flowchart TD
-  Start[Start] --> End[End]
-  B --> C{Decision};
-  C -->|Yes| D[Outcome 1];
-  C -->|No| E[Outcome 2];
-  D --> F[End];
-  E --> F;
+  A[Start] --> B{Pick a random number!};
+  B -- low --> D[Too low!]
+  B -- high --> E[Too high!]
+  C -- right --> F[Congradulations]
+  D ----> G[Try again!];
+  E ----> G[Try again!];
+  F ----> H[Correct];
 ```
