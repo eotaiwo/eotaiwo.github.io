@@ -1,1 +1,9 @@
-
+```mermaid
+flowchart TD
+  Start[Start] --> End[End]
+  B --> C{Decision};
+  C -->|Yes| D[Outcome 1];
+  C -->|No| E[Outcome 2];
+  D --> F[End];
+  E --> F;
+```
